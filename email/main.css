@@ -1,0 +1,152 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    transition: all 0.3s ease;
+}
+
+body {
+    background-color: #ccc;
+    height: 100vh;
+    position: relative;
+}
+
+.app {
+    position: absolute;
+    bottom: 0;
+    right: 20%;
+    background-color: #fff;
+    width: 500px;
+    height: 500px;
+}
+
+.header {
+    height: 40px;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    background-color: #f2f6fc;
+}
+
+.header p {
+    margin-left: 20px;
+    font-weight: 500;
+}
+
+.header-icon {
+    display: flex;
+    gap: 10px;
+    font-size: 20px;
+    margin-right: 20px;
+}
+
+.header-icon iconify-icon:hover {
+    cursor: pointer;
+    background-color: #ccc;
+}
+
+.header-line {
+    align-self: flex-end;
+}
+
+.box-input {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    border: none;
+    outline: none;
+    width: 100%;
+    line-height: 20px;
+    padding: 10px 20px;
+}
+
+.to {
+    display: none;
+    position: absolute;
+    top: 11px;
+    left: 22px;
+}
+
+.to:focus {
+    display: block;
+}
+
+.line {
+    border-top: 0.5px solid #ccc;
+    width: 92%;
+    align-self: center;
+    display: block;
+}
+
+textarea {
+    width: 100%;
+    height: 310px;
+    outline: none;
+    border: none;
+    padding: 10px 20px;
+}
+
+.footer {
+    padding: 12px;
+    display: flex;
+    align-items: center;
+}
+
+.send-btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0b57d0;
+    border: none;
+    outline: none;
+    border-radius: 24px;
+    width: 105px;
+    height: 36px;
+    color: #fff;
+}
+
+.send-btn:hover {
+    cursor: pointer;
+    box-shadow: 0 1px 2px 0 rgba(26, 115, 232, 0.451), 0 1px 3px 1px rgba(26, 115, 232, 0.302);
+    background-color: #1e67c6;
+}
+
+.send-btn p {
+    padding-left: 24px;
+    padding-right: 16px;
+}
+
+.btn-line {
+    height: 100%;
+    border-left: 1px solid #000;
+}
+
+.down-icon {
+    margin-right: 12px;
+    font-size: 10px;
+}
+
+.footer-icon {
+    font-size: 20px;
+    margin-left: 20px;
+    display: flex;
+    opacity: 0.6;
+}
+
+.footer-icon iconify-icon {
+    padding: 5px;
+}
+
+.footer-icon iconify-icon:hover {
+    cursor: pointer;
+    background-color: #ccc;
+    border-radius: 4px;
+}
+
+.delete-icon {
+    margin-left: 80px;
+    padding: 5px;
+}

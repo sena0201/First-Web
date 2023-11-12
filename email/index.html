@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+</head>
+
+<body>
+    <main class="app">
+        <header class="header">
+            <p>Thư mới</p>
+            <div class="header-icon">
+                <iconify-icon icon="ic:sharp-minimize"></iconify-icon>
+                <iconify-icon icon="material-symbols:pan-zoom-rounded"></iconify-icon>
+                <iconify-icon icon="iconamoon:close-bold"></iconify-icon>
+            </div>
+        </header>
+        <div class="box-input">
+            <div style="position: relative;">
+                <input id="to" type="text" placeholder="Người nhận">
+                <label for="to" class="to">Đến:</label>
+            </div>
+            <span class="line"></span>
+            <div>
+                <input type="text" placeholder="Tiêu đề">
+            </div>
+            <span class="line"></span>
+            <div>
+                <textarea></textarea>
+            </div>
+        </div>
+        <footer class="footer">
+            <button class="send-btn">
+                <p>Gửi</p>
+                <span class="btn-line"></span>
+                <iconify-icon class="down-icon" icon="teenyicons:down-solid"></iconify-icon>
+            </button>
+            <div class="footer-icon">
+                <iconify-icon icon="ph:text-a-underline-bold"></iconify-icon>
+                <iconify-icon icon="ion:attach"></iconify-icon>
+                <iconify-icon icon="material-symbols:link"></iconify-icon>
+                <iconify-icon icon="mdi:emoji-outline"></iconify-icon>
+                <iconify-icon icon="ri:drive-line"></iconify-icon>
+                <iconify-icon icon="material-symbols:image-outline"></iconify-icon>
+                <iconify-icon icon="material-symbols:lock-outline"></iconify-icon>
+                <iconify-icon icon="charm:menu-kebab"></iconify-icon>
+                <iconify-icon class="delete-icon" icon="material-symbols:delete-outline"></iconify-icon>
+            </div>
+        </footer>
+    </main>
+</body>
+
+</html>

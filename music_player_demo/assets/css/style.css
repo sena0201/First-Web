@@ -1,0 +1,178 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: arial, sans-serif;
+}
+
+body {
+  background-color: #f1efef;
+}
+
+.header {
+  padding-top: 10px;
+}
+
+.playing-music {
+  background-color: #fff;
+}
+
+.playing {
+  color: rgb(229, 81, 106);
+}
+
+.down-icon,
+.music-title,
+.add-icon {
+  display: inline-block;
+}
+
+.music-title>.playing,
+.header-music-name {
+  margin: 0;
+}
+
+.down-icon {
+  left: 15px;
+  position: absolute;
+  color: rgb(229, 81, 106);
+}
+
+.music-title {
+  width: 100%;
+  text-align: center;
+}
+
+.add-icon {
+  right: 15px;
+  position: absolute;
+  color: rgb(229, 81, 106);
+}
+
+.main-photo {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  background: url("/photo/background.jpg") top center / cover no-repeat;
+}
+
+.main-music-photo {
+  width: 250px;
+  border-radius: 50%;
+}
+
+.control {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px 0;
+}
+
+.play-pause {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: rgb(229, 81, 106);
+  color: #fff;
+  font-size: 25px;
+  box-shadow: 0 0 10px rgba(229, 81, 106, 0.8);
+}
+
+.fa-play{
+  margin-left: 4px;
+}
+
+.play-pause:hover{
+  background-color: rgb(247, 54, 86);
+}
+
+.inactive {
+  display: none !important;
+}
+
+.repeat-icon,
+.back-icon,
+.play-pause,
+.next-icon,
+.random-icon {
+  text-align: center;
+  line-height: 50px;
+}
+
+.repeat-icon,
+.back-icon,
+.next-icon,
+.random-icon {
+  color: #7a7878;
+}
+
+.repeat-icon:hover,
+.back-icon:hover,
+.next-icon:hover,
+.random-icon:hover {
+  color: #000;
+}
+
+li {
+  background-color: #fff;
+  margin-top: 7px;
+  margin-left: 7px;
+  margin-right: 7px;
+  border-radius: 10px 10px 10px 10px;
+  display: flex;
+  box-shadow: 0 0 10px rgba(178, 169, 171, 0.8);
+}
+
+li>div {
+  margin-top: 15px;
+  margin-left: 20px;
+}
+
+.music-photo {
+  width: 50px;
+  border-radius: 50%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 30px;
+}
+
+.singer-name {
+  font-size: 15px;
+  opacity: 0.6;
+}
+
+.footer {
+  height: 40px;
+  background-color: rgb(6, 6, 49);
+  display: flex;
+  justify-content: space-around;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  align-items: center;
+}
+
+.home-icon,
+.album-icon,
+.pause-icon-2,
+.search-icon,
+.menu-icon {
+  color: #fff;
+}
+
+.pause-icon-2 {
+  width: 25px;
+  height: 25px;
+  background-color: rgb(229, 81, 106);
+  border-radius: 50%;
+  text-align: center;
+}
+
+.fa {
+  margin-top: 4px;
+  margin-left: 2px;
+}

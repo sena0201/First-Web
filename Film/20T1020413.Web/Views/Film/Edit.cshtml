@@ -1,0 +1,82 @@
+﻿@model _20T1020413.DomainModels.Film
+@{
+
+}
+<div class="box box-primary">
+    <div class="box-body">
+        <form class="form-horizontal" action="~/Film/Save" method="post">
+            @Html.AntiForgeryToken()
+            @Html.HiddenFor(m => m.FilmID)
+            <div class="form-group">
+                <label class="control-label col-sm-2">Tên phim:</label>
+                <div class="col-sm-10">
+                    @Html.TextBoxFor(m => m.FilmName, new { @class = "form-control" })
+                    @Html.ValidationMessageFor(m => m.FilmName, "", new { @style = "color:#f00;" })
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-2">Đạo diễn:</label>
+                <div class="col-sm-10">
+                    @Html.TextBoxFor(m => m.Director, new { @class = "form-control" })
+                    @Html.ValidationMessageFor(m => m.Director, "", new { @style = "color:#f00;" })
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-2">Diễn viên chính:</label>
+                <div class="col-sm-10">
+                    @Html.TextBoxFor(m => m.Performer, new { @class = "form-control" })
+                    @Html.ValidationMessageFor(m => m.Performer, "", new { @style = "color:#f00;" })
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-2">Mô tả:</label>
+                <div class="col-sm-10">
+                    @Html.TextBoxFor(m => m.Description, new { @class = "form-control" })
+                    @Html.ValidationMessageFor(m => m.Description, "", new { @style = "color:#f00;" })
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-2">Poster:</label>
+                <div class="col-sm-10">
+                    <div style="margin-bottom: 10px;width: 150px;border: 1px solid #ccc;">
+                        <img src="~/Photo/@Model.Poster" id="poster" alt="Photo" style="width:150px;">
+                    </div>
+                    <input type="hidden" name="poster" value="@Model.Poster" />
+                    <input type="file"
+                           name="uploadPhoto"
+                           onchange="document.getElementById('poster').src = window.URL.createObjectURL(this.files[0])" />
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-2">Thời lượng:</label>
+                <div class="col-sm-10">
+                    @Html.TextBoxFor(m => m.Time, new { @class = "form-control" })
+                    @Html.ValidationMessageFor(m => m.Time, "", new { @style = "color:#f00;" })
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-2">Thời gian chiếu:</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" name="showtime" value="@string.Format("{0:dd/MM/yyyy}",Model.ShowTime)" />
+                    @Html.ValidationMessageFor(m => m.ShowTime, "", new { @style = "color:#f00;" })
+                    @Html.HiddenFor(m => m.ShowTime)
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-2">Trailer:</label>
+                <div class="col-sm-10">
+                    @Html.TextBoxFor(m => m.Trailer, new { @class = "form-control" })
+                    @Html.ValidationMessageFor(m => m.Trailer, "", new { @style = "color:#f00;" })
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                    <button type="submit" class="btn btn-primary"><i class="glyphicon glyphicon-save"></i> Lưu dữ liệu</button>
+                    <a href="~/Film" class="btn btn-warning">
+                        Quay lại
+                    </a>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

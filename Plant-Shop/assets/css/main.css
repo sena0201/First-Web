@@ -1,0 +1,115 @@
+
+
+.header{
+    padding: 3rem 0;
+}
+
+.logo{
+    font-size: 2.4rem;
+    margin-right: 3.6rem;
+}
+
+.navbar{
+    font-size: 1.4rem;
+    color: var(--black-color);
+    font-weight: 200;
+}
+
+.navbar__home, .navbar__products, .navbar__contacts{
+    margin: 0 1rem;
+}
+
+.navbar__products, 
+.navbar__contacts{
+    opacity: 0.5;
+}
+
+.customer{
+    flex: 2;
+    justify-content: flex-end;
+    font-size: 1.6rem;
+}
+
+.shopping-cart, .account{
+    margin: 0 1.4rem;
+}
+
+.menu{
+    margin-left: 1.2rem;
+}
+
+.advertisement{
+    background-color: var(--primary-color);
+    border-radius: 24px;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+.advertisement__left{
+    display: flex;
+    flex-direction: column;
+    margin: 3rem 0;
+    width: 45%;
+}
+
+.title{
+    font-size: 6.4rem;
+    display: flex;
+    flex-wrap: wrap;
+    line-height: 7rem;
+}
+
+.quantity{
+
+}
+
+.quantity__customers{
+    margin-left: 5rem;
+}
+
+.quantity p{
+    font-size: 1.8rem;
+    font-weight: 100;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.search{
+    display: flex;
+    position: relative;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.search__input{
+    padding: 1rem 0;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    width: 70%;
+}
+
+.search__btn{
+    background-color: var(--primary-color);
+    border: none;
+    position: absolute;
+    right: 31%;
+    border-radius: 5px;
+    width: 30px;
+    height: 30px;
+}
+
+.shape{
+    background-color: var(--black-color);
+    height: 250px;
+    width: 300px;
+    border-radius: 200px 200px 0 200px;
+    position: relative;
+}
+
+.shape img{
+    position: absolute;
+    height: 300px;
+    bottom: 0;
+    left: 15%;
+}

@@ -1,0 +1,15 @@
+.home{
+    &__title{
+        color: red;
+    }
+
+    &__desc{
+        &--active{
+            color: yellow;
+            text-decoration: none;
+            &:hover{
+                color: black;
+            }
+        }
+    }
+}

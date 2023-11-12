@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="./responsive.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <div class="app">
+        <div class="app-header">
+            <header class="header">
+                <div class="logo">MK</div>
+                <nav class="navbar">
+                    <ul class="nav-list">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Shop</a></li>
+                        <li><a href="#">Purchase history</a></li>
+                    </ul>
+                </nav>
+                <div class="header__right">
+                    <div class="header__right-text">Hello Kha</div>
+                    <div class="user"><i class='bx bx-user-circle'></i></div>
+                    <div class="cart">
+                        <i class='bx bx-cart'></i>
+
+                    </div>
+                    <div class="menu-icon"><i class='bx bx-menu'></i></div>
+                </div>
+            </header>
+        </div>
+
+        <div class="product">
+            <div class="product__img">
+                <img src="./image.png" alt="">
+            </div>
+            <div class="product__details">
+                <div class="product__details-name">
+                    Product Name
+                </div>
+                <div class="product__details-price">
+                    10$
+                </div>
+                <div class="product__details-quantity">
+                    <button class="btn-decrease">-</button>
+                    <input type="text" class="input-value" min="0" value="0">
+                    <button class="btn-increase">+</button>
+                </div>
+                <a href="#" class="addtocart-btn">
+                    <i class='bx bx-cart-add'></i>
+                    <p class="addtocart-text">Add to cart</p>
+                </a>
+            </div>
+        </div>
+    </div>
+    <script src="./main.js"></script>
+</body>
+
+</html>

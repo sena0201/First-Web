@@ -1,0 +1,6 @@
+D:\Laptrinh\Web\Film\20T1020413.DomainModels\bin\Debug\20T1020413.DomainModels.dll
+D:\Laptrinh\Web\Film\20T1020413.DomainModels\bin\Debug\20T1020413.DomainModels.pdb
+D:\Laptrinh\Web\Film\20T1020413.DomainModels\obj\Debug\20T1020413.DomainModels.csproj.AssemblyReference.cache
+D:\Laptrinh\Web\Film\20T1020413.DomainModels\obj\Debug\20T1020413.DomainModels.csproj.CoreCompileInputs.cache
+D:\Laptrinh\Web\Film\20T1020413.DomainModels\obj\Debug\20T1020413.DomainModels.dll
+D:\Laptrinh\Web\Film\20T1020413.DomainModels\obj\Debug\20T1020413.DomainModels.pdb

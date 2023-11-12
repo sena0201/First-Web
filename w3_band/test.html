@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./test.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="cart__body-container">
+        <div class="cart__product-details">
+            <input type="checkbox" name="checked<%=cart.getProductID()%>" value="<%=cart.getProductID()%>">
+
+        </div>
+        <span>
+            <input type="text" class="unit-price" name="" value="1000">
+        </span>
+        <div style="width: fit-content;flex:1">
+            <div class="product__details-quantity">
+                <span class="btn-decrease">-</span>
+                <input class="input-value" type="text" name="" value="1">
+                <span class="btn-increase">+</span>
+            </div>
+        </div>
+        <span>
+            <input type="text" class="sale-price" name="" value="">
+        </span>
+        <span style="flex:0;"><a style="color:#000;"
+                href="DeleteController?cartID=<%=cart.getCartID()%>&productID=<%=cart.getProductID()%>"><i
+                    class='bx bx-trash'></i></a></span>
+    </div>
+    <div class="cart__body-container">
+        <div class="cart__product-details">
+            <input type="checkbox" name="checked<%=cart.getProductID()%>" value="<%=cart.getProductID()%>">
+
+        </div>
+        <span>
+            <input type="text" class="unit-price" name="" value="1000">
+        </span>
+        <div style="width: fit-content;flex:1">
+            <div class="product__details-quantity">
+                <span class="btn-decrease">-</span>
+                <input class="input-value" type="text" name="" value="1">
+                <span class="btn-increase">+</span>
+            </div>
+        </div>
+        <span>
+            <input type="text" class="sale-price" name="" value="">
+        </span>
+        <span style="flex:0;"><a style="color:#000;"
+                href="DeleteController?cartID=<%=cart.getCartID()%>&productID=<%=cart.getProductID()%>"><i
+                    class='bx bx-trash'></i></a></span>
+    </div>
+
+    <div class="cart__body-container">
+        <div class="cart__product-details">
+            <input type="checkbox" name="checked<%=cart.getProductID()%>" value="<%=cart.getProductID()%>">
+
+        </div>
+        <span>
+            <input type="text" class="unit-price" name="" value="1000">
+        </span>
+        <div style="width: fit-content;flex:1">
+            <div class="product__details-quantity">
+                <span class="btn-decrease">-</span>
+                <input class="input-value" type="text" name="" value="1">
+                <span class="btn-increase">+</span>
+            </div>
+        </div>
+        <span>
+            <p class="salePrice">1000</p>
+            <input type="text" class="sale-price" name="" value="">
+        </span>
+        <span style="flex:0;"><a style="color:#000;"
+                href="DeleteController?cartID=<%=cart.getCartID()%>&productID=<%=cart.getProductID()%>"><i
+                    class='bx bx-trash'></i></a></span>
+    </div>
+</body>
+<script>
+    // Lặp qua tất cả các sản phẩm và thêm sự kiện cho nút tăng và giảm số lượng
+    const products = document.querySelectorAll('.cart__body-container');
+
+    if (products) {
+        products.forEach(product => {
+            const decreaseButton = product.querySelector('.btn-decrease');
+            const increaseButton = product.querySelector('.btn-increase');
+            const quantityElement = product.querySelector('.input-value');
+            const priceElement = product.querySelector('.sale-price');
+            const priceElement1 = product.querySelector('.salePrice');
+
+            if (quantityElement && decreaseButton && increaseButton && priceElement) {
+                // Xử lý sự kiện giảm số lượng
+                decreaseButton.addEventListener('click', () => {
+                    let currentQuantity = quantityElement.value;
+                    if (currentQuantity > 1) {
+                        currentQuantity--;
+                        quantityElement.value = currentQuantity;
+                        updatePrice();
+                    }
+                });
+
+                // Xử lý sự kiện tăng số lượng
+                increaseButton.addEventListener('click', () => {
+                    let currentQuantity = quantityElement.value;
+                    currentQuantity++;
+                    quantityElement.value = currentQuantity;
+                    updatePrice();
+                });
+
+                // Cập nhật giá dựa trên số lượng
+                function updatePrice() {
+                    const unitPrice = product.querySelector('.unit-price').value; // Lấy giá và loại bỏ ký hiệu $
+                    const currentQuantity = quantityElement.value;
+                    const totalPrice = unitPrice * currentQuantity;
+                    priceElement.value = totalPrice;
+                    priceElement1.textContent = totalPrice;
+                }
+            }
+        });
+    }
+
+
+</script>
+
+</html>

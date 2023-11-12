@@ -1,0 +1,11 @@
+D:\Laptrinh\Web\Film\20T1020413.BusinessLayers\bin\Debug\20T1020413.BusinessLayers.dll
+D:\Laptrinh\Web\Film\20T1020413.BusinessLayers\bin\Debug\20T1020413.BusinessLayers.pdb
+D:\Laptrinh\Web\Film\20T1020413.BusinessLayers\bin\Debug\20T1020413.DataLayers.dll
+D:\Laptrinh\Web\Film\20T1020413.BusinessLayers\bin\Debug\20T1020413.DomainModels.dll
+D:\Laptrinh\Web\Film\20T1020413.BusinessLayers\bin\Debug\20T1020413.DataLayers.pdb
+D:\Laptrinh\Web\Film\20T1020413.BusinessLayers\bin\Debug\20T1020413.DomainModels.pdb
+D:\Laptrinh\Web\Film\20T1020413.BusinessLayers\obj\Debug\20T1020413.BusinessLayers.csproj.AssemblyReference.cache
+D:\Laptrinh\Web\Film\20T1020413.BusinessLayers\obj\Debug\20T1020413.BusinessLayers.csproj.CoreCompileInputs.cache
+D:\Laptrinh\Web\Film\20T1020413.BusinessLayers\obj\Debug\20T1020413.BusinessLayers.csproj.CopyComplete
+D:\Laptrinh\Web\Film\20T1020413.BusinessLayers\obj\Debug\20T1020413.BusinessLayers.dll
+D:\Laptrinh\Web\Film\20T1020413.BusinessLayers\obj\Debug\20T1020413.BusinessLayers.pdb

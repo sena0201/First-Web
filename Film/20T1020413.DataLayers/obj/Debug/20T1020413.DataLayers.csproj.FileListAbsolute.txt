@@ -1,0 +1,9 @@
+D:\Laptrinh\Web\Film\20T1020413.DataLayers\bin\Debug\20T1020413.DataLayers.dll
+D:\Laptrinh\Web\Film\20T1020413.DataLayers\bin\Debug\20T1020413.DataLayers.pdb
+D:\Laptrinh\Web\Film\20T1020413.DataLayers\bin\Debug\20T1020413.DomainModels.dll
+D:\Laptrinh\Web\Film\20T1020413.DataLayers\bin\Debug\20T1020413.DomainModels.pdb
+D:\Laptrinh\Web\Film\20T1020413.DataLayers\obj\Debug\20T1020413.DataLayers.csproj.AssemblyReference.cache
+D:\Laptrinh\Web\Film\20T1020413.DataLayers\obj\Debug\20T1020413.DataLayers.csproj.CoreCompileInputs.cache
+D:\Laptrinh\Web\Film\20T1020413.DataLayers\obj\Debug\20T1020413.DataLayers.csproj.CopyComplete
+D:\Laptrinh\Web\Film\20T1020413.DataLayers\obj\Debug\20T1020413.DataLayers.dll
+D:\Laptrinh\Web\Film\20T1020413.DataLayers\obj\Debug\20T1020413.DataLayers.pdb

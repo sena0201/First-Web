@@ -1,0 +1,44 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+}
+
+.app {
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    height: 100vh;
+    display: grid;
+    grid-template-areas: 'header header header'
+        'nav nav nav'
+        'main main main'
+        'main main main'
+        'footer footer footer';
+}
+
+header {
+    background-color: #ccc;
+}
+
+nav {
+    background-color: red;
+}
+
+main {
+    background-color: #000;
+}
+
+.sidebar {}
+
+article {
+    background-color: aqua;
+}
+
+footer {
+    background-color: yellow;
+}

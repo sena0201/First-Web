@@ -1,0 +1,54 @@
+.wrapper {
+    width: 248px;
+    padding-left: 24px;
+    padding-top: 20px;;
+}
+
+.navbar {
+    height: 144px;
+    margin-bottom: 8px;
+}
+
+.navbar::after{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    width: 224px;
+    border: 0.5px solid #ccc;
+}
+
+.home,
+.follow,
+.live {
+    width: 224px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+}
+
+.home a,
+.follow a,
+.live a {
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    color: #000;
+    font-size: 18px;
+    font-weight: 700;
+    width: 100%;
+    height: 100%;
+}
+
+.home a:hover,
+.follow a:hover,
+.live a:hover {
+    background-color: #e1dede;
+}
+
+.icon {
+    font-size: 28px;
+    height: 100%;
+}
